@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* Add gradient background */
+    background: linear-gradient(to right, lightyellow, rgba(255, 166, 0, 0.598), white);
+    /* background: linear-gradient(to right, rgb(248, 189, 198), rgb(255, 192, 227), rgb(234, 12, 241)); */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    border-radius: 50%;
+    /* This will make the image circular */
+    object-fit: cover;
+    /* This will ensure the image covers the entire area */
+}
+
+header h1 {
+    margin: 0;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    margin: 20px 0;
+}
+
+#link-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#link-list li {
+    margin-bottom: 10px;
+}
+
+/* Add some styles for the button images */
+.button-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.button-text {
+    flex-grow: 1;
+    /* Allow the text to take up the remaining space */
+    text-align: center;
+    /* Center align the text */
+}
+
+button {
+    display: flex;
+    /* Use flexbox to align the image and text */
+    align-items: center;
+    /* Center align the image and text vertically */
+    justify-content: start;
+    /* Align the image and text to the start of the button */
+    width: 100%;
+    /* Full width */
+    max-width: 250px;
+    /* Maximum width */
+    padding: 5px;
+    font-size: 16px;
+    white-space: normal;
+    /* Allow text to wrap */
+    word-wrap: break-word;
+    /* Break words as necessary */
+    overflow: hidden;
+    /* Hide overflow */
+    cursor: pointer;
+    text-align: center;
+    /* Center align the text */
+    border-radius: 10px;
+    /* Add softness to the button edge */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    /* Make the button look raised */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #ddd;
+    padding: 10px 0;
+}
