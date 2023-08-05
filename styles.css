@@ -3,16 +3,18 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    display: block;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     margin: 0;
+    /* Remove margin */
+    padding: 0;
+    /* Remove padding */
     font-family: Arial, sans-serif;
     /* Add gradient background */
     background: linear-gradient(to right, lightyellow, rgba(255, 166, 0, 0.598), white);
     /* background: linear-gradient(to right, rgb(248, 189, 198), rgb(255, 192, 227), rgb(234, 12, 241)); */
+
 }
 
 header {
@@ -45,11 +47,19 @@ header h1 {
 
 /* Add styles for the content container */
 .content-container {
-    padding-bottom: 50px;
-    /* Space for the footer */
+    padding: 20px;
+        /* Add padding around the content */
+        padding-bottom: 60px;
+        /* Space for the footer */
 }
 
 main {
+    display: flex;
+    /* Use flexbox to center the content */
+    flex-direction: column;
+    /* Stack the content vertically */
+    align-items: center;
+    /* Center align the content horizontally */
     margin: 20px 0;
 }
 
@@ -126,5 +136,8 @@ footer {
     width: 100%;
     text-align: center;
     background-color: #ddd;
-    padding: 1px 0;
+    padding: 10px 0;
+    color: #333;
+    height: 60px;
+    /* Increase height to match padding */
 }
