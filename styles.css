@@ -98,6 +98,21 @@ button {
     /* Make the button look raised */
 }
 
+/* Add styles for the QR code image */
+.qrcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.qrcode img {
+    width: 200px;
+    /* Set the width */
+    height: 200px;
+    /* Set the height */
+}
+
 footer {
     position: fixed;
     bottom: 0;
