@@ -43,6 +43,12 @@ header h1 {
     color: inherit;
 }
 
+/* Add styles for the content container */
+.content-container {
+    padding-bottom: 5px;
+    /* Space for the footer */
+}
+
 main {
     margin: 20px 0;
 }
