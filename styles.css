@@ -111,6 +111,7 @@ button {
     /* Set the width */
     height: 200px;
     /* Set the height */
+    padding: 1px 0;
 }
 
 footer {
@@ -119,5 +120,5 @@ footer {
     width: 100%;
     text-align: center;
     background-color: #ddd;
-    padding: 10px 0;
+    padding: 1px 0;
 }
